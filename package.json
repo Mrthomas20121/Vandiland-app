@@ -1,0 +1,20 @@
+{
+  "name": "discord-bot-creator",
+  "version": "1.2.0",
+  "description": "Download and install mods!",
+  "main": "app.js",
+  "dependencies": {
+    "electron": "^1.6.2"
+  },
+  "devDependencies": {
+    "clipboard": "^1.7.1",
+    "electron-context-menu": "^0.9.1",
+    "electron-packager": "^8.6.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ vandiland-app --asar=true --icon=./assets/icons/main.ico --app-copyright=Mrthomas20121 --version-string.LegalCopyright=Mrthomas20121 --version-string.CompanyName=Mrthomas20121 --version-string.FileDescription=Create discord bot --version-string.ProductName=TellrawGenerator --version-string.OriginalFilename=TellrawGenerator.exe"
+  },
+  "author": "Mrthomas20121",
+  "license": "ISC"
+}
