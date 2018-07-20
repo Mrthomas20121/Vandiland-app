@@ -1,0 +1,256 @@
+/*
+Copyright Mrthomas20121 (c) 2016-2018
+*/
+body {
+  background-color: #542957;
+  color:#94a2b3;
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+a {
+  color: rgb(121, 211, 238);
+  border-bottom: 1px dotted rgb(121, 211, 238);
+}
+a:focus, a:active {
+color:rgb(36, 134, 163);
+text-decoration: none;
+border-color: rgb(36, 134, 163);
+}
+
+div.table-title {
+  display: block;
+ margin: auto;
+ max-width: 600px;
+ padding:5px;
+ width: 100%;
+}
+
+.table-title h3 {
+  color: #fafafa;
+  font-size: 30px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+table {
+  border:2px solid rgb(31, 31, 31);
+}
+th {
+  color:rgb(221, 255, 176);
+  background:rgb(143, 162, 39);
+
+  border-right: 1px solid rgb(101, 116, 21);
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:rgb(31, 31, 31);
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:rgb(255, 255, 255);
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:rgb(255, 255, 255);
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.card
+{
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px black;
+  margin: 10px;
+}
+
+.card .avatar
+{
+  width: 24px;
+  margin: 5px;
+  margin-right: 10px;
+  vertical-align: bottom;
+  
+}
+
+.card .sub
+{
+  color: gray;
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.card header
+{
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.card .rolelist
+{
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.card .rolelist li::before
+{
+  content: "⬤  ";
+  margin-right: 5px;  
+}
+
+.card .rolelist li
+{
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 24px;
+  background-color: rgb(187, 187, 187);
+  font-size: 75%
+}
+
+.card .rolelist li.mods {
+  background-color: #2ECC71;
+}
+.card .rolelist li.dev {
+  background-color: #206694;
+}
+.card .rolelist li.sponsor{
+  background: #992D22;
+}
+.card .rolelist li.youtuberz{
+  background: #358CDB;
+}
+.card .rolelist li.admino{
+  background: #7E4773;
+}
+
+.modpanel
+{
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid gray
+}
+
+.modpanel>div
+{
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border-left: 3px solid gray;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.modpanel>div:hover
+{
+  display: inline-block;
+  border-left: 3px solid red;
+  background-color: #ccaaaa;
+  cursor: pointer;
+  color: #550000;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
