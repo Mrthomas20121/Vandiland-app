@@ -1,4 +1,4 @@
 # Vandiland-app
-Application i made for vandiland(a discord server) to easily manange bans.
+Application Powered by Electron to see Discord members from a server.
 
-coding by Me. css by Tefek and Me!
+coding by Me. css by Tefek(https://github.com/493msi) and Me!
