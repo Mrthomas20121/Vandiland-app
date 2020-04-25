@@ -1,7 +1,7 @@
 {
-  "name": "discord-bot-creator",
-  "version": "1.2.0",
-  "description": "Download and install mods!",
+  "name": "discord-member-viewer",
+  "version": "2.0.0",
+  "description": "Discord Member Viewer",
   "main": "app.js",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
