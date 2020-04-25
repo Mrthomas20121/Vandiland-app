@@ -15,7 +15,10 @@ app.on('ready', (launchInfo) => {
     name: "vandiland app",
     width: 1280,
     height: 720,
-    icon: path.join(__dirname, 'assets/icons/app.png')
+    icon: path.join(__dirname, 'assets/icons/app.png'),
+	webPreferences: {
+	  nodeIntegration: true
+	}
    });
 app.on('window-all-closed', () => {
       app.quit();
