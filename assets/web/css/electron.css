@@ -2,7 +2,7 @@
 Copyright Mrthomas20121 (c) 2016-2018
 */
 body {
-  background-color: #542957;
+  background: linear-gradient(90deg, rgba(13,88,109,1) 0%, rgba(168,73,163,1) 100%);
   color:#94a2b3;
   font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -16,137 +16,124 @@ text-decoration: none;
 border-color: rgb(36, 134, 163);
 }
 
-div.table-title {
-  display: block;
- margin: auto;
- max-width: 600px;
- padding:5px;
- width: 100%;
-}
-
-.table-title h3 {
-  color: #fafafa;
-  font-size: 30px;
-  font-weight: 400;
-  font-style:normal;
-  font-family: "Roboto", helvetica, arial, sans-serif;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-}
-/*** Table Styles **/
-
-.table-fill {
-  background: white;
-  border-radius:3px;
-  border-collapse: collapse;
-  height: 320px;
-  margin: auto;
-  max-width: 600px;
-  padding:5px;
-  width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
-}
 table {
-  border:2px solid rgb(31, 31, 31);
-}
-th {
-  color:rgb(221, 255, 176);
-  background:rgb(143, 162, 39);
-
-  border-right: 1px solid rgb(101, 116, 21);
-  font-size:23px;
-  font-weight: 100;
-  padding:24px;
-  text-align:left;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  vertical-align:middle;
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 2.4rem;
+  background-color: #20262e;
+  color: #fff;
+  overflow: hidden;
 }
 
-th:first-child {
-  border-top-left-radius:3px;
-}
- 
-th:last-child {
-  border-top-right-radius:3px;
-  border-right:none;
-}
-  
-tr {
-  border-top: 1px solid #C1C3D1;
-  border-bottom: 1px solid #C1C3D1;
-  color:rgb(31, 31, 31);
-  font-size:16px;
-  font-weight:normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
-}
- 
-tr:hover td {
-  background:#4E5066;
-  color:#FFFFFF;
-  border-top: 1px solid #22262e;
-}
- 
-tr:first-child {
-  border-top:none;
+table tr:nth-child(even) {
+  background-color: rgb(46, 53, 62);
 }
 
-tr:last-child {
-  border-bottom:none;
-}
- 
-tr:nth-child(odd) td {
-  background:rgb(255, 255, 255);
-}
- 
-tr:nth-child(odd):hover td {
-  background:#4E5066;
+table th,
+table td:before {
+  color: #28b1de;
 }
 
-tr:last-child td:first-child {
-  border-bottom-left-radius:3px;
-}
- 
-tr:last-child td:last-child {
-  border-bottom-right-radius:3px;
-}
- 
-td {
-  background:rgb(255, 255, 255);
-  padding:20px;
-  text-align:left;
-  vertical-align:middle;
-  font-weight:300;
-  font-size:18px;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #C1C3D1;
+table th {
+  display: none;
 }
 
-td:last-child {
-  border-right: 0px;
-}
-
-th.text-left {
+table th,
+table td {
+  margin: .5rem 2rem;
   text-align: left;
 }
 
-th.text-center {
-  text-align: center;
+table td {
+  display: block;
+  font-size: 90%;
 }
 
-th.text-right {
-  text-align: right;
+table td:first-child {
+  padding-top: 1rem;
 }
 
-td.text-left {
-  text-align: left;
+table td:last-child {
+  padding-bottom: 1rem;
 }
 
-td.text-center {
-  text-align: center;
+table td:before {
+  content: attr(data-th) ':\00a0';
+  font-weight: bold;
+  min-width: 8rem;
+  display: inline-block;
 }
 
-td.text-right {
-  text-align: right;
+.table-2 table td:before {
+  min-width: 0;
+}
+
+.table-3 table {
+  background-color: rgb(46, 53, 62);
+}
+
+.table-3 table tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.table-3 table td:before {
+  width: 100%;
+  font-weight: normal;
+  opacity: .8;
+}
+
+.table-3 table td {
+  margin: 0;
+  padding: 1.5rem 2rem 0 2rem;
+  font-weight: bold
+}
+
+.table-3 table tr td:first-child {
+  background-color: #20262e;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.table-3 table tr td:last-child {
+  padding-bottom: 1.5rem;
+  border-bottom: 4px solid rgba(255, 255, 255, .3)
+}
+
+.table-3 table tr:last-child td:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 600px) {
+  table td:before {
+    display: none;
+  }
+  table th,
+  table td {
+    display: table-cell;
+  }
+  table th,
+  table td,
+  table td:first-child,
+  table td:last-child {
+    padding: 1.5rem 2rem;
+  }
+  .table-3 table {
+    background-color: #20262e;
+  }
+  .table-3 table tr:nth-child(even) {
+    background-color: rgb(46, 53, 62);
+  }
+  .table-3 table td {
+    margin: .5rem 2rem;
+    padding: 1.5rem 2rem;
+    font-weight: normal
+  }
+  .table-3 table tr td:first-child {
+    background-color: transparent;
+  }
+  .table-3 table tr td:last-child {
+    border-bottom: none;
+  }
 }
 
 .card
@@ -156,6 +143,8 @@ td.text-right {
   border-radius: 5px;
   box-shadow: 0px 2px 3px black;
   margin: 10px;
+  display: inline-block;
+  width: 47%;
 }
 
 .card .avatar
@@ -253,4 +242,9 @@ td.text-right {
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.card .rolelist li.nostyle {
+  background-color: white;
+  color: black;
 }
