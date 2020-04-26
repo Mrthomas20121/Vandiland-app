@@ -1,4 +1,7 @@
-
+/**
+ * @author Mrthomas20121
+ * discord.js - Discord Integration
+ */
 let discord = require('discord.io');
 
 discord.Client.prototype.getRoleName = function(serverID, roleName) {
